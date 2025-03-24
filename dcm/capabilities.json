@@ -1,0 +1,650 @@
+{
+    "strategies": {
+        "equal_weight": {
+            "name": "Equal Weight Strategy",
+            "description": "Equal allocation across all holdings",
+            "confidence_score": 0.8433756949981253,
+            "times_used": 95,
+            "last_performance": 0.78,
+            "active": true,
+            "parameters": {
+                "rebalance_threshold": 0.05,
+                "min_holdings": 3
+            }
+        },
+        "risk_parity": {
+            "name": "Risk Parity Strategy",
+            "description": "Allocation based on risk contribution",
+            "confidence_score": 0.9,
+            "times_used": 12,
+            "last_performance": 0.9,
+            "active": true,
+            "parameters": {
+                "target_volatility": 0.15,
+                "risk_free_rate": 0.02
+            }
+        },
+        "volatility_weighted": {
+            "name": "Volatility Weighted Strategy",
+            "description": "Inverse volatility weighting",
+            "confidence_score": 0.7040353606999998,
+            "times_used": 12,
+            "last_performance": 0.7,
+            "active": true,
+            "parameters": {
+                "lookback_period": 60,
+                "min_volatility": 0.05
+            }
+        },
+        "dividend_focus": {
+            "name": "Dividend Focus Strategy",
+            "description": "Weighted by dividend yield",
+            "confidence_score": 0.75,
+            "times_used": 0,
+            "last_performance": 0.0,
+            "active": true,
+            "parameters": {
+                "min_dividend_yield": 0.02,
+                "max_single_weight": 0.25
+            }
+        }
+    },
+    "performance_history": [
+        {
+            "strategy": "equal_weight",
+            "performance": 0.9,
+            "timestamp": "2025-03-23T12:11:52.226313"
+        },
+        {
+            "strategy": "equal_weight",
+            "performance": 0.85,
+            "timestamp": "2025-03-23T12:11:52.227566"
+        },
+        {
+            "strategy": "equal_weight",
+            "performance": 0.85,
+            "timestamp": "2025-03-23T12:13:32.767407"
+        },
+        {
+            "strategy": "equal_weight",
+            "performance": 0.92,
+            "timestamp": "2025-03-23T12:13:32.767543"
+        },
+        {
+            "strategy": "equal_weight",
+            "performance": 0.78,
+            "timestamp": "2025-03-23T12:13:32.767659"
+        },
+        {
+            "strategy": "equal_weight",
+            "performance": 0.85,
+            "timestamp": "2025-03-23T12:13:57.109398"
+        },
+        {
+            "strategy": "equal_weight",
+            "performance": 0.92,
+            "timestamp": "2025-03-23T12:13:57.109565"
+        },
+        {
+            "strategy": "equal_weight",
+            "performance": 0.78,
+            "timestamp": "2025-03-23T12:13:57.109691"
+        },
+        {
+            "strategy": "equal_weight",
+            "performance": 0.85,
+            "timestamp": "2025-03-23T12:14:16.963418"
+        },
+        {
+            "strategy": "equal_weight",
+            "performance": 0.92,
+            "timestamp": "2025-03-23T12:14:16.963694"
+        },
+        {
+            "strategy": "equal_weight",
+            "performance": 0.78,
+            "timestamp": "2025-03-23T12:14:16.963828"
+        },
+        {
+            "strategy": "equal_weight",
+            "performance": 0.85,
+            "timestamp": "2025-03-23T12:14:41.621050"
+        },
+        {
+            "strategy": "equal_weight",
+            "performance": 0.92,
+            "timestamp": "2025-03-23T12:14:41.621216"
+        },
+        {
+            "strategy": "equal_weight",
+            "performance": 0.78,
+            "timestamp": "2025-03-23T12:14:41.621357"
+        },
+        {
+            "strategy": "equal_weight",
+            "performance": 0.85,
+            "timestamp": "2025-03-23T12:15:00.778870"
+        },
+        {
+            "strategy": "equal_weight",
+            "performance": 0.92,
+            "timestamp": "2025-03-23T12:15:00.779041"
+        },
+        {
+            "strategy": "equal_weight",
+            "performance": 0.78,
+            "timestamp": "2025-03-23T12:15:00.779260"
+        },
+        {
+            "strategy": "equal_weight",
+            "performance": 0.9,
+            "timestamp": "2025-03-24T15:11:42.839136"
+        },
+        {
+            "strategy": "equal_weight",
+            "performance": 0.85,
+            "timestamp": "2025-03-24T15:11:43.006126"
+        },
+        {
+            "strategy": "equal_weight",
+            "performance": 0.9,
+            "timestamp": "2025-03-24T15:11:44.307440"
+        },
+        {
+            "strategy": "equal_weight",
+            "performance": 0.8,
+            "timestamp": "2025-03-24T15:11:44.356202"
+        },
+        {
+            "strategy": "risk_parity",
+            "performance": 0.9,
+            "timestamp": "2025-03-24T15:11:44.357153"
+        },
+        {
+            "strategy": "volatility_weighted",
+            "performance": 0.7,
+            "timestamp": "2025-03-24T15:11:44.357698"
+        },
+        {
+            "strategy": "equal_weight",
+            "performance": 0.85,
+            "timestamp": "2025-03-24T15:11:44.959588"
+        },
+        {
+            "strategy": "equal_weight",
+            "performance": 0.9,
+            "timestamp": "2025-03-24T15:14:52.568618"
+        },
+        {
+            "strategy": "equal_weight",
+            "performance": 0.85,
+            "timestamp": "2025-03-24T15:14:52.724673"
+        },
+        {
+            "strategy": "equal_weight",
+            "performance": 0.9,
+            "timestamp": "2025-03-24T15:14:52.881997"
+        },
+        {
+            "strategy": "equal_weight",
+            "performance": 0.8,
+            "timestamp": "2025-03-24T15:14:52.904328"
+        },
+        {
+            "strategy": "risk_parity",
+            "performance": 0.9,
+            "timestamp": "2025-03-24T15:14:52.904934"
+        },
+        {
+            "strategy": "volatility_weighted",
+            "performance": 0.7,
+            "timestamp": "2025-03-24T15:14:52.905452"
+        },
+        {
+            "strategy": "equal_weight",
+            "performance": 0.85,
+            "timestamp": "2025-03-24T15:14:54.058880"
+        },
+        {
+            "strategy": "equal_weight",
+            "performance": 0.9,
+            "timestamp": "2025-03-24T15:16:42.642729"
+        },
+        {
+            "strategy": "equal_weight",
+            "performance": 0.85,
+            "timestamp": "2025-03-24T15:16:42.793937"
+        },
+        {
+            "strategy": "equal_weight",
+            "performance": 0.9,
+            "timestamp": "2025-03-24T15:16:42.932948"
+        },
+        {
+            "strategy": "equal_weight",
+            "performance": 0.8,
+            "timestamp": "2025-03-24T15:16:42.955126"
+        },
+        {
+            "strategy": "risk_parity",
+            "performance": 0.9,
+            "timestamp": "2025-03-24T15:16:42.955822"
+        },
+        {
+            "strategy": "volatility_weighted",
+            "performance": 0.7,
+            "timestamp": "2025-03-24T15:16:42.956437"
+        },
+        {
+            "strategy": "equal_weight",
+            "performance": 0.85,
+            "timestamp": "2025-03-24T15:16:43.888199"
+        },
+        {
+            "strategy": "equal_weight",
+            "performance": 0.9,
+            "timestamp": "2025-03-24T15:21:43.629239"
+        },
+        {
+            "strategy": "equal_weight",
+            "performance": 0.85,
+            "timestamp": "2025-03-24T15:21:43.755973"
+        },
+        {
+            "strategy": "equal_weight",
+            "performance": 0.9,
+            "timestamp": "2025-03-24T15:21:43.898906"
+        },
+        {
+            "strategy": "equal_weight",
+            "performance": 0.8,
+            "timestamp": "2025-03-24T15:21:43.916744"
+        },
+        {
+            "strategy": "risk_parity",
+            "performance": 0.9,
+            "timestamp": "2025-03-24T15:21:43.917482"
+        },
+        {
+            "strategy": "volatility_weighted",
+            "performance": 0.7,
+            "timestamp": "2025-03-24T15:21:43.918313"
+        },
+        {
+            "strategy": "equal_weight",
+            "performance": 0.85,
+            "timestamp": "2025-03-24T15:21:45.066892"
+        },
+        {
+            "strategy": "equal_weight",
+            "performance": 0.92,
+            "timestamp": "2025-03-24T15:21:45.067656"
+        },
+        {
+            "strategy": "equal_weight",
+            "performance": 0.78,
+            "timestamp": "2025-03-24T15:21:45.068319"
+        },
+        {
+            "strategy": "equal_weight",
+            "performance": 0.9,
+            "timestamp": "2025-03-24T15:24:28.682660"
+        },
+        {
+            "strategy": "equal_weight",
+            "performance": 0.85,
+            "timestamp": "2025-03-24T15:24:28.813144"
+        },
+        {
+            "strategy": "equal_weight",
+            "performance": 0.9,
+            "timestamp": "2025-03-24T15:24:28.966499"
+        },
+        {
+            "strategy": "equal_weight",
+            "performance": 0.8,
+            "timestamp": "2025-03-24T15:24:28.983936"
+        },
+        {
+            "strategy": "risk_parity",
+            "performance": 0.9,
+            "timestamp": "2025-03-24T15:24:28.984685"
+        },
+        {
+            "strategy": "volatility_weighted",
+            "performance": 0.7,
+            "timestamp": "2025-03-24T15:24:28.985320"
+        },
+        {
+            "strategy": "equal_weight",
+            "performance": 0.85,
+            "timestamp": "2025-03-24T15:24:30.236451"
+        },
+        {
+            "strategy": "equal_weight",
+            "performance": 0.92,
+            "timestamp": "2025-03-24T15:24:30.237281"
+        },
+        {
+            "strategy": "equal_weight",
+            "performance": 0.78,
+            "timestamp": "2025-03-24T15:24:30.239472"
+        },
+        {
+            "strategy": "equal_weight",
+            "performance": 0.9,
+            "timestamp": "2025-03-24T15:26:00.069486"
+        },
+        {
+            "strategy": "equal_weight",
+            "performance": 0.85,
+            "timestamp": "2025-03-24T15:26:00.191511"
+        },
+        {
+            "strategy": "equal_weight",
+            "performance": 0.9,
+            "timestamp": "2025-03-24T15:26:00.324722"
+        },
+        {
+            "strategy": "equal_weight",
+            "performance": 0.8,
+            "timestamp": "2025-03-24T15:26:00.342371"
+        },
+        {
+            "strategy": "risk_parity",
+            "performance": 0.9,
+            "timestamp": "2025-03-24T15:26:00.343231"
+        },
+        {
+            "strategy": "volatility_weighted",
+            "performance": 0.7,
+            "timestamp": "2025-03-24T15:26:00.343982"
+        },
+        {
+            "strategy": "equal_weight",
+            "performance": 0.85,
+            "timestamp": "2025-03-24T15:26:01.281337"
+        },
+        {
+            "strategy": "equal_weight",
+            "performance": 0.92,
+            "timestamp": "2025-03-24T15:26:01.282204"
+        },
+        {
+            "strategy": "equal_weight",
+            "performance": 0.78,
+            "timestamp": "2025-03-24T15:26:01.283002"
+        },
+        {
+            "strategy": "equal_weight",
+            "performance": 0.9,
+            "timestamp": "2025-03-24T15:29:32.710262"
+        },
+        {
+            "strategy": "equal_weight",
+            "performance": 0.85,
+            "timestamp": "2025-03-24T15:29:32.847354"
+        },
+        {
+            "strategy": "equal_weight",
+            "performance": 0.9,
+            "timestamp": "2025-03-24T15:29:33.001505"
+        },
+        {
+            "strategy": "equal_weight",
+            "performance": 0.8,
+            "timestamp": "2025-03-24T15:29:33.018898"
+        },
+        {
+            "strategy": "risk_parity",
+            "performance": 0.9,
+            "timestamp": "2025-03-24T15:29:33.019851"
+        },
+        {
+            "strategy": "volatility_weighted",
+            "performance": 0.7,
+            "timestamp": "2025-03-24T15:29:33.020702"
+        },
+        {
+            "strategy": "equal_weight",
+            "performance": 0.85,
+            "timestamp": "2025-03-24T15:29:34.025175"
+        },
+        {
+            "strategy": "equal_weight",
+            "performance": 0.92,
+            "timestamp": "2025-03-24T15:29:34.026388"
+        },
+        {
+            "strategy": "equal_weight",
+            "performance": 0.78,
+            "timestamp": "2025-03-24T15:29:34.027420"
+        },
+        {
+            "strategy": "equal_weight",
+            "performance": 0.9,
+            "timestamp": "2025-03-24T15:35:09.123613"
+        },
+        {
+            "strategy": "equal_weight",
+            "performance": 0.85,
+            "timestamp": "2025-03-24T15:35:09.246857"
+        },
+        {
+            "strategy": "equal_weight",
+            "performance": 0.9,
+            "timestamp": "2025-03-24T15:35:09.393534"
+        },
+        {
+            "strategy": "equal_weight",
+            "performance": 0.8,
+            "timestamp": "2025-03-24T15:35:09.411694"
+        },
+        {
+            "strategy": "risk_parity",
+            "performance": 0.9,
+            "timestamp": "2025-03-24T15:35:09.412710"
+        },
+        {
+            "strategy": "volatility_weighted",
+            "performance": 0.7,
+            "timestamp": "2025-03-24T15:35:09.413808"
+        },
+        {
+            "strategy": "equal_weight",
+            "performance": 0.85,
+            "timestamp": "2025-03-24T15:35:10.392773"
+        },
+        {
+            "strategy": "equal_weight",
+            "performance": 0.92,
+            "timestamp": "2025-03-24T15:35:10.393852"
+        },
+        {
+            "strategy": "equal_weight",
+            "performance": 0.78,
+            "timestamp": "2025-03-24T15:35:10.394896"
+        },
+        {
+            "strategy": "equal_weight",
+            "performance": 0.9,
+            "timestamp": "2025-03-24T15:36:57.396440"
+        },
+        {
+            "strategy": "equal_weight",
+            "performance": 0.85,
+            "timestamp": "2025-03-24T15:36:57.526178"
+        },
+        {
+            "strategy": "equal_weight",
+            "performance": 0.9,
+            "timestamp": "2025-03-24T15:36:57.663863"
+        },
+        {
+            "strategy": "equal_weight",
+            "performance": 0.8,
+            "timestamp": "2025-03-24T15:36:57.680484"
+        },
+        {
+            "strategy": "risk_parity",
+            "performance": 0.9,
+            "timestamp": "2025-03-24T15:36:57.681646"
+        },
+        {
+            "strategy": "volatility_weighted",
+            "performance": 0.7,
+            "timestamp": "2025-03-24T15:36:57.683022"
+        },
+        {
+            "strategy": "equal_weight",
+            "performance": 0.85,
+            "timestamp": "2025-03-24T15:36:58.664572"
+        },
+        {
+            "strategy": "equal_weight",
+            "performance": 0.92,
+            "timestamp": "2025-03-24T15:36:58.665996"
+        },
+        {
+            "strategy": "equal_weight",
+            "performance": 0.78,
+            "timestamp": "2025-03-24T15:36:58.667065"
+        },
+        {
+            "strategy": "equal_weight",
+            "performance": 0.9,
+            "timestamp": "2025-03-24T15:39:02.620470"
+        },
+        {
+            "strategy": "equal_weight",
+            "performance": 0.85,
+            "timestamp": "2025-03-24T15:39:02.759279"
+        },
+        {
+            "strategy": "equal_weight",
+            "performance": 0.9,
+            "timestamp": "2025-03-24T15:39:02.904043"
+        },
+        {
+            "strategy": "equal_weight",
+            "performance": 0.8,
+            "timestamp": "2025-03-24T15:39:02.920230"
+        },
+        {
+            "strategy": "risk_parity",
+            "performance": 0.9,
+            "timestamp": "2025-03-24T15:39:02.921335"
+        },
+        {
+            "strategy": "volatility_weighted",
+            "performance": 0.7,
+            "timestamp": "2025-03-24T15:39:02.922366"
+        },
+        {
+            "strategy": "equal_weight",
+            "performance": 0.85,
+            "timestamp": "2025-03-24T15:39:03.975317"
+        },
+        {
+            "strategy": "equal_weight",
+            "performance": 0.92,
+            "timestamp": "2025-03-24T15:39:03.976533"
+        },
+        {
+            "strategy": "equal_weight",
+            "performance": 0.78,
+            "timestamp": "2025-03-24T15:39:03.977640"
+        },
+        {
+            "strategy": "equal_weight",
+            "performance": 0.9,
+            "timestamp": "2025-03-24T15:41:07.447865"
+        },
+        {
+            "strategy": "equal_weight",
+            "performance": 0.85,
+            "timestamp": "2025-03-24T15:41:07.565105"
+        },
+        {
+            "strategy": "equal_weight",
+            "performance": 0.9,
+            "timestamp": "2025-03-24T15:41:07.698995"
+        },
+        {
+            "strategy": "equal_weight",
+            "performance": 0.8,
+            "timestamp": "2025-03-24T15:41:07.715068"
+        },
+        {
+            "strategy": "risk_parity",
+            "performance": 0.9,
+            "timestamp": "2025-03-24T15:41:07.716643"
+        },
+        {
+            "strategy": "volatility_weighted",
+            "performance": 0.7,
+            "timestamp": "2025-03-24T15:41:07.717818"
+        },
+        {
+            "strategy": "equal_weight",
+            "performance": 0.85,
+            "timestamp": "2025-03-24T15:41:08.659050"
+        },
+        {
+            "strategy": "equal_weight",
+            "performance": 0.92,
+            "timestamp": "2025-03-24T15:41:08.660371"
+        },
+        {
+            "strategy": "equal_weight",
+            "performance": 0.78,
+            "timestamp": "2025-03-24T15:41:08.661960"
+        },
+        {
+            "strategy": "equal_weight",
+            "performance": 0.9,
+            "timestamp": "2025-03-24T15:43:07.363764"
+        },
+        {
+            "strategy": "equal_weight",
+            "performance": 0.85,
+            "timestamp": "2025-03-24T15:43:07.477900"
+        },
+        {
+            "strategy": "equal_weight",
+            "performance": 0.9,
+            "timestamp": "2025-03-24T15:43:07.613636"
+        },
+        {
+            "strategy": "equal_weight",
+            "performance": 0.8,
+            "timestamp": "2025-03-24T15:43:07.631560"
+        },
+        {
+            "strategy": "risk_parity",
+            "performance": 0.9,
+            "timestamp": "2025-03-24T15:43:07.632906"
+        },
+        {
+            "strategy": "volatility_weighted",
+            "performance": 0.7,
+            "timestamp": "2025-03-24T15:43:07.634167"
+        },
+        {
+            "strategy": "equal_weight",
+            "performance": 0.85,
+            "timestamp": "2025-03-24T15:43:08.573634"
+        },
+        {
+            "strategy": "equal_weight",
+            "performance": 0.92,
+            "timestamp": "2025-03-24T15:43:08.575075"
+        },
+        {
+            "strategy": "equal_weight",
+            "performance": 0.78,
+            "timestamp": "2025-03-24T15:43:08.576398"
+        }
+    ],
+    "last_update": "2025-03-24T15:43:08.576404"
+}
