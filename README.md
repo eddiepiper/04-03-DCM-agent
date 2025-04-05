@@ -1,22 +1,22 @@
-# 🧠 SmartPortfolio AI – A DCM-Driven Rebalancing Agent System
+# 🧠 SmartPortfolio AI – A MCP - Driven Rebalancing Agent System
 
-SmartPortfolio AI is a modular, intelligent AI agent system designed to manage and optimize investment portfolios using **Dynamic Capability Modeling (DCM)**.
+SmartPortfolio AI is a modular, intelligent AI agent system designed to manage and optimize investment portfolios using **Model Context Protocol (MCP)**.
 
-This project showcases how an AI agent can **evaluate, evolve, and recommend investment strategies** dynamically, based on performance and policy constraints — while separating the **decision logic** (DCM) from **execution workflows**.
+This project showcases how an AI agent can **evaluate, evolve, and recommend investment strategies** dynamically, based on performance and policy constraints — while separating the **decision logic** (MCP) from **execution workflows**.
 
 ---
 
 ## 🎯 Project Purpose
 
-To demonstrate **Dynamic Capability Modeling (DCM)** in action — where the AI system evolves internal capabilities (e.g., portfolio strategies) and adapts its behavior to changing conditions, user feedback, and performance results.
+To demonstrate **Model Context Protocol (MCP)** in action — where the AI system evolves internal capabilities (e.g., portfolio strategies) and adapts its behavior to changing conditions, user feedback, and performance results.
 
 ---
 
 ## 🧠 Core Concepts
 
-- **Dynamic Capability Modeling (DCM):** Tracks and manages evolving capabilities (investment strategies), scoring them based on past outcomes and adapting over time.
+- **Model Context Protocol (MCP):** Tracks and manages evolving capabilities (investment strategies), scoring them based on past outcomes and adapting over time.
 - **Modular AI Agent Design:** Each agent performs a dedicated role in the portfolio rebalancing process.
-- **Separation of Concerns:** DCM recommends the best strategy, but a lightweight controller orchestrates the execution.
+- **Separation of Concerns:** MCP recommends the best strategy, but a lightweight controller orchestrates the execution.
 
 ---
 
@@ -34,7 +34,7 @@ Conversational Agent
 Calls Execution Controller    ←──────────────
 (a lightweight orchestrator)                  |
      ↓                                         |
-DCM Engine ⇄ Capability Manager Layer         |
+MCP Engine ⇄ Capability Manager Layer         |
      ↓                                         |
 Sends recommendation:                         |
 - Use "Risk Parity"                           |
@@ -55,7 +55,7 @@ Execution Controller calls agents as needed:  ↑
 | Agent | Role |
 |-------|------|
 | **Conversational Interface Agent** | Handles Telegram input/output and user interactions |
-| **DCM Engine** | Recommends strategies based on historical performance & context |
+| **MCP Engine** | Recommends strategies based on historical performance & context |
 | **Portfolio Analysis Agent** | Assesses portfolio structure and current asset distribution |
 | **Bank Policy Agent** | Applies internal or regulatory constraints on strategies |
 | **Rebalance Strategy Agent** | Executes chosen portfolio rebalancing logic |
@@ -66,15 +66,15 @@ Execution Controller calls agents as needed:  ↑
 ## 📂 Directory Structure
 
 ```bash
-SmartPortfolioDCM/
+SmartPortfolioMCP/
 ├── agents/
 │   ├── analysis_agent.py
 │   ├── rebalance_agent.py
 │   ├── bank_policy_agent.py
 │   ├── trade_execution_agent.py
-│   └── dcm_engine.py          # The brain – recommends & evolves strategy capabilities
+│   └── MCP_engine.py          # The brain – recommends & evolves strategy capabilities
 │
-├── dcm/
+├── MCP/
 │   ├── capabilities.json      # Tracks all strategies, scores, and metadata
 │   └── performance_log.json   # Logs real-world or simulated performance results
 │
@@ -82,7 +82,7 @@ SmartPortfolioDCM/
 │   └── telegram_bot.py        # Telegram Conversational Agent
 │
 ├── controller/
-│   └── execution_controller.py # Orchestrates agents based on DCM output
+│   └── execution_controller.py # Orchestrates agents based on MCP output
 │
 ├── data/
 │   └── sample_portfolio.json
@@ -98,14 +98,14 @@ SmartPortfolioDCM/
 
 1. User interacts via Telegram.
 2. Conversational Agent parses the query and forwards to the Execution Controller.
-3. The Controller calls the DCM Engine to get a recommended strategy.
-4. The DCM Engine evaluates current capability states (via `capabilities.json`).
+3. The Controller calls the MCP Engine to get a recommended strategy.
+4. The MCP Engine evaluates current capability states (via `capabilities.json`).
 5. Based on recommendation, the Controller:
    - Calls Portfolio Analysis
    - Applies Bank Policies
    - Executes Strategy
    - Triggers Trade Execution
-6. Results are fed back to the DCM Engine for scoring and capability adjustment.
+6. Results are fed back to the MCP Engine for scoring and capability adjustment.
 
 ---
 
@@ -131,8 +131,8 @@ Each strategy has:
 ## ✅ Getting Started
 
 ```bash
-git clone https://github.com/yourusername/SmartPortfolioDCM.git
-cd SmartPortfolioDCM
+git clone https://github.com/yourusername/SmartPortfolioMCP.git
+cd SmartPortfolioMCP
 pip install -r requirements.txt
 python run.py
 ```
@@ -151,15 +151,15 @@ To start the Telegram bot, configure your bot token in `interface/telegram_bot.p
 
 ---
 
-## 🧠 Designed With DCM in Mind
+## 🧠 Designed With MCP in Mind
 
-This project keeps the **DCM Engine pure** — responsible only for **capability evaluation, evolution, and strategy recommendation**, not system control.
+This project keeps the **MCP Engine pure** — responsible only for **capability evaluation, evolution, and strategy recommendation**, not system control.
 
 The **execution controller handles orchestration**, maintaining modularity and showcasing how **agent-based AI systems can be both adaptive and interpretable**.
 
 ---
 
-# Dynamic Capital Management (DCM) Project
+# Dynamic Capital Management (MCP) Project
 
 A sophisticated portfolio management system with AI-powered analysis and Telegram bot interface.
 
@@ -186,12 +186,12 @@ A sophisticated portfolio management system with AI-powered analysis and Telegra
 ## Project Structure
 
 ```
-dcm-project/
+MCP-project/
 ├── agents/                 # AI agents for different analysis tasks
-├── dcm/                   # Core DCM functionality
+├── MCP/                   # Core MCP functionality
 │   ├── alerts.py         # Portfolio alerts system
 │   ├── conditions.py     # Alert conditions
-│   ├── dcm_engine.py     # Main engine
+│   ├── MCP_engine.py     # Main engine
 │   ├── holdings.py       # Portfolio holdings
 │   ├── market_data.py    # Market data integration
 │   └── portfolio.py      # Portfolio management
@@ -199,7 +199,7 @@ dcm-project/
 │   └── telegram_bot.py   # Telegram bot implementation
 ├── tests/               # Test suite
 │   ├── agents/         # Agent tests
-│   ├── dcm/           # Core functionality tests
+│   ├── MCP/           # Core functionality tests
 │   └── interface/     # Interface tests
 ├── .env.example        # Example environment variables
 ├── requirements.txt    # Python dependencies
@@ -211,7 +211,7 @@ dcm-project/
 1. Clone the repository:
 ```bash
 git clone <repository-url>
-cd dcm-project
+cd MCP-project
 ```
 
 2. Create and activate a virtual environment:
